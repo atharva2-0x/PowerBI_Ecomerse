@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Entry Form</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background: url('gradient-wallpaper.jpg');
+            /* no-repeat center center fixed; */
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f4f46b;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(255, 253, 253);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        form {
+            /* Background color for the form */
+            
+            background-color: #f7f7f71f;
+            padding: 30px; /* Add some padding to the form for separation */
+            border-radius: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Data Entry Form</h1>
+    <form method="POST" action="/submit">
+        <label for="OrderID">OrderID:</label>
+        <input type="text" name="OrderID" required><br>
+        
+        <label for="OrderDate">Order Date:</label>
+        <input type="text" name="OrderDate" id="OrderDate" required>
+
+        <label for="CustomerName">Customer Name:</label>
+        <input type="text" name="CustomerName" id="CustomerName" required>
+
+        <label for="State">State:</label>
+        <input type="text" name="State" id="State" required>
+
+        <label for="City">City:</label>
+        <input type="text" name="City" id="City" required>
+        
+        <label for="Amount">Amount:</label>
+        <input type="text" name="Amount" required><br>
+
+        <label for="Profit">Profit:</label>
+        <input type="text" name="Profit" required><br>
+
+        <label for="Quantity">Quantity:</label>
+        <input type="text" name="Quantity" required><br>
+
+        <label for="Category">Category:</label>
+        <input type="text" name="Category" required><br>
+
+        <label for="SubCategory">Sub Category:</label>
+        <input type="text" name="SubCategory" required><br>
+
+        <label for="PaymentMode">Payment Mode:</label>
+        <input type="text" name="PaymentMode" required><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>
